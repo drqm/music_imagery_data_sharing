@@ -1,0 +1,43 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="memory_music_ieeg">Memory_music_iEEG</h1>
+<p>In this repository you will find the implementation of experimental paradigms investigating musical memory and imagery with intracranial EEG and MEG. The experiment consists of three tasks:</p>
+<p>1- A recognition memory task in which participants listen to a short musical excerpt (from a J.S. Bach work) and afterwards are presented with short melodies which could belong or not to the musical excerpt. Participants decide whether each melody is "old" or "new".</p>
+<p>2- A localizer block in which participants are presented each of the three tones used in task 3 in random order (avoiding consecutive repetitions). After each sound, participants are asked to imagine it very vividly in their minds.</p>
+<p>3- A working memory and imagery task (maintenance) in which participants are presented with a short three-note melody, then are asked to imagine it vividly on cue, and finally are required to decide if the second melody is the same or different from the first. In this task, there is a second block (manipulation) in which participants need to mentally invert the melody in their minds (e.g. ABC becomes CBA) and judge whether the second melody is an iverted version of the first or not. The two blocks (maintanance and manipulation) are counterbalanced across subjects.</p>
+<p>For tasks 2 and 3 we have both MEG and iEEG versions. These are the correspoinding implementations of each task:</p>
+<ul>
+<li>
+<p>task 1 <a href="https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG.py">scripts/LerningBach_iEEG.py</a></p>
+</li>
+<li>
+<p>task 2 <a href="https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG.py">scripts/localizer_iEEG.py</a> (for iEEG) and <a href="https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_MEG.py">scripts/localizer_MEG.py</a> (for MEG)</p>
+</li>
+<li>
+<p>task 3 <a href="https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_iEEG.py">scripts/manipulation_task_iEEG.py</a> (for iEEG) and <a href="https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_MEG.py">scripts/manipulation_task_MEG.py</a> (for MEG)</p>
+</li>
+</ul>
+<p>The three tasks should be presented in this order: 1, 2, 3 or this order: 2, 3, 1; so that the localizer always preceds the maintenance/manipulation task. These two orders may be counterbalanced across participants.</p>
+<p>These are the approximate durations and number of trials in each task:</p>
+<p>For iEEG</p>
+<ul>
+<li>
+<p>Task 1: 42 trials (21 old, 21 new) (5 minutes)</p>
+</li>
+<li>
+<p>task 2: 120 trials (40 for each tone) (5 minutes)</p>
+</li>
+<li>
+<p>task 3: 96 trials (48 maintenance: 24 same, 24 different; 48 manipulation: 24 inverted, 24 not inverted/other) (17 minutes)</p>
+</li>
+</ul>
+<p>for MEG:</p>
+<ul>
+<li>
+<p>task 3: 180 trials (60 for each tone) (8 minutes)</p>
+</li>
+<li>
+<p>task 2: 120 trials (60 maintenance: 30 same, 30 different; 60 manipulation: 30 inverted, 30 not inverted/other) (21 minutes)</p>
+</li>
+</ul>
+<p>Simuli found under the "stimuli" folder. Log files stored in the "logs" folder.</p>
+</body></html>

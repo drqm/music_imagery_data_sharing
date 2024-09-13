@@ -1,0 +1,7 @@
+# Ignore directories
+
+auditoryLocalizer_lite/
+
+# Ignore files
+
+*.Rhistory
